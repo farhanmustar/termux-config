@@ -34,3 +34,7 @@ export PATH=$PREFIX/etc/alternatives/:$PATH
 source $HOME/.bash_aliases
 source $HOME/.profile
 ```
+
+* use termux-services and termux:boot to run service similar to supervisord
+   1. [termux-services](https://wiki.termux.com/wiki/Termux-services) 
+   2. [termux:boot](https://wiki.termux.com/wiki/Termux:Boot) 
