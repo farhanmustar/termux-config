@@ -23,6 +23,17 @@ termux-setup-storage
 * Allow termux app to run in app background in settings.
 * Some android can also lock the app in the running app list or from drawer.
 
+* Install termux-api to allow for checking hw status such as battery life.
+* Install termux-api apk.
+    1. [termux-api](https://wiki.termux.com/wiki/Termux:API) 
+* Install termux-api inside termux.
+```bash
+pkg install termux-api
+
+# this allow for command such as.
+termux-battery-status
+```
+
 # Notes:
 * list all pkg and its description
 ```bash
