@@ -14,6 +14,15 @@ go build -o file_engine_termux ./file_engine.go
 mv ./file_engine_termux ../bin/
 ```
 
+# Initial Setup
+* Setup storage access, run following command and click allow on screen popup.
+```bash
+termux-setup-storage
+```
+
+* Allow termux app to run in app background in settings.
+* Some android can also lock the app in the running app list or from drawer.
+
 # Notes:
 * list all pkg and its description
 ```bash
