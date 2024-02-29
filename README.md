@@ -58,3 +58,15 @@ source $HOME/.profile
 * use termux-services and termux:boot to run service similar to supervisord
    1. [termux-services](https://wiki.termux.com/wiki/Termux-services) 
    2. [termux:boot](https://wiki.termux.com/wiki/Termux:Boot) 
+
+## python 3 setup:
+* install python 3
+```bash
+pkg install python
+```
+* install virtualenv because cannot use venv.
+```bash
+pip install virtualenv
+cd ~
+virtualenv .env
+```
