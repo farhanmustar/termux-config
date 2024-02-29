@@ -70,3 +70,14 @@ pip install virtualenv
 cd ~
 virtualenv .env
 ```
+
+## performance note
+* press and hold termux screen and select keep screen on.
+* run on adb to allow dump and allow termux to check screen status.
+```bash
+adb shell pm grant com.termux android.permission.DUMP
+```
+* on termux run following to check screen status
+```bash
+/system/bin/dumpsys deviceidle | grep mScreenOn=
+```
