@@ -81,3 +81,25 @@ adb shell pm grant com.termux android.permission.DUMP
 ```bash
 /system/bin/dumpsys deviceidle | grep mScreenOn=
 ```
+
+Make sure to disable android auto remove cache when not ise for long time.
+Otherwise tmux become empty back.
+
+# Ubuntu
+ 
+Got multiple way to configure. This one cannot use byobu but can use keyring.
+(using andronix does not have byobu issue but cannot use keyring)
+
+Use proot-distro.
+
+```bash
+apt update && apt full-upgrade
+apt install proot-distro
+proot-distro install ubuntu
+proot-distro login ubuntu
+
+inside ubuntu install sudo to make script run.
+
+apt update
+apt install sudo
+```
